@@ -1,0 +1,5 @@
+// clearInterval(fn) : 정기적으로 실행하도록 해 놓은 함수 없앰
+
+// 1초에 1번씩 'hello' 출력하기
+const playInterval = setInterval(() => console.log('hello'), 1000);
+setTimeout(() => {clearInterval(playInterval);}, 5000);
